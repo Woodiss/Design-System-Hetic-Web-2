@@ -13,9 +13,9 @@ export default {
         control: 'select',
         options: [null, 'p', 'span', 'h1', 'h2', 'h3', 'h4', 'h5', 'em'],
       },
-      fontOptions: {
+      styleTest: {
         control: 'select',
-        options: ['title-1-semi-bold', 'title-2-semi-bold', 'title-3-semi-bold', 'title-4-semi-bold', 'title-5-semi-bold', 'subtitle-regular', 'subtitle-regular-semi-bold', 'text-regular', 'text-regular-medium', 'text-regular-semi-bold', 'text-small', 'text-small-medium'],
+        options: ['title-1', 'title-2', 'title-3', 'title-4', 'title-5', 'subtitle-1', 'subtitle-2', 'text-1', 'text-2', 'text-3', 'text-4', 'text-5'],
       }
   }
 };
@@ -25,7 +25,7 @@ export const Regular = {
   args: {
     tag: "p",
     content: "Content",
-    fontOptions: "text-regular"
+    styleTest: "text-3"
   },
 };
 
