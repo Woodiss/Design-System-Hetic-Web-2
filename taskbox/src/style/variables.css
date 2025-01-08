@@ -28,9 +28,10 @@
     --circle-radius: 999px;
 
     /* BORDERS */
-    --error-border: 1px solid var(--error-color);
+    --error-border: 2px solid var(--error-color);
 
     /* OUTLINES */
-    --regular-outline: 1px solid var(--push-color);
-    --error-outline: 1px solid var(--error-color);
+    --primary-outline: 2px solid var(--primary-color);
+    --regular-outline: 2px solid var(--push-color);
+    --error-outline: 2px solid var(--error-color);
 }

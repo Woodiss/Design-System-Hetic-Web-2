@@ -1,1 +1,23 @@
-@import '../../style/global.css'
+@import '../../style/global.css';
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.input-error {
+    color: var(--error-color);
+}
+input {
+    font-size: var(--fz-16);
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid var(--primary-color);
+}
+input:focus {
+    border-bottom: 2px solid transparent;
+    outline: var(--primary-outline);
+}
+input:invalid {
+    outline: var(--error-color);
+}
