@@ -5,10 +5,17 @@
     flex-direction: column;
     gap: 10px;
 }
+.input-message {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 .input-error {
     color: var(--error-color);
 }
 input {
+    width: 100%;
+    min-width: 200px    ;
     font-size: var(--fz-16);
     padding: 10px;
     border: none;

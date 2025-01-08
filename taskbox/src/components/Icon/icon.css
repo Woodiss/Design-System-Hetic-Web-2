@@ -1,10 +1,1 @@
-.img-icon {
-  display: inline-block;
-  object-fit: cover;
-  border-radius: 50%; /* Ajoute un cercle si l'image est carrée */
-  transition: transform 0.2s ease;
-}
-
-.img-icon:hover {
-  transform: scale(1.1); /* Effet au survol */
-}
+@import '../../style/global.css';

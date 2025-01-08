@@ -2,7 +2,7 @@ import { Input } from './Input';
 import { fn } from '@storybook/test';
 
 export default {
-  title: 'Example/Input',
+  title: 'Components/Input',
   component: Input,
   parameters: {
     layout: 'centered',

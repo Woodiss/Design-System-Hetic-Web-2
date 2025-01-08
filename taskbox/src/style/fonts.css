@@ -1,11 +1,22 @@
 /* Inter Font*/
+/* Inter Regular */
 @font-face {
     font-family: 'Inter';
-    src: url('../../assets/font/Inter-VariableFont_opsz,wght.ttf') format('ttf');
-    font-weight: normal;
+    src: url('../assets/fonts/Inter-Regular.woff2') format('woff2');
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
-}
+  }
+  
+  /* Inter Italic */
+  @font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter-Italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+  }
+  
 
 /* Title */
 .title-1 {

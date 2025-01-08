@@ -1,4 +1,4 @@
-import Icon from './Icon';
+import { Icon } from './Icon';
 import errorIcon from '../../components/assets/errorIcon.svg';
 
 export default {
@@ -20,22 +20,5 @@ export const Default = {
     size: '50px',
     className: "",
     backgroundColor: "#000000",
-  },
-};
-
-export const Large = {
-  args: {
-    src: errorIcon,
-    alt: 'Icon Large',
-    size: '100px',
-  },
-};
-
-export const WithCustomClass = {
-  args: {
-    src: errorIcon,
-    alt: 'Icon Custom Class',
-    size: '60px',
-    className: 'custom-icon',
   },
 };

@@ -2,7 +2,7 @@ import { Text } from './Text';
 import { fn } from '@storybook/test';
 
 export default {
-  title: 'Example/Text',
+  title: 'Components/Text',
   component: Text,
   parameters: {
     layout: 'centered',

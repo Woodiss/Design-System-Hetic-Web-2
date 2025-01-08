@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from 'prop-types';
 import "./icon.css";
 
-const Icon = ({ src, alt, size, className }) => {
+export const Icon = ({ src, alt, size, className }) => {
   return (
     <img
       className={`img-icon ${className}`}
@@ -24,5 +24,3 @@ Icon.defaultProps = {
   size: '100px', // Taille par défaut
   className: '',
 };
-
-export default Icon;
