@@ -1,7 +1,7 @@
 /* Inter Font*/
 @font-face {
     font-family: 'Inter';
-    src: url('../../assets/font/Inter-VariableFont_opsz,wght.woff2') format('woff2');
+    src: url('../../assets/font/Inter-VariableFont_opsz,wght.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
