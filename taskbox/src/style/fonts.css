@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* Title */
+.title-1-semi-bold {
+    font-size: var(--fz-48);
+    font-weight: var(--fw-semi-bold);
+}
+.title-2-semi-bold {
+    font-size: var(--fz-40);
+    font-weight: var(--fw-semi-bold);
+}
+.title-3-semi-bold {
+    font-size: var(--fz-32);
+    font-weight: var(--fw-semi-bold);
+}
+.title-4-semi-bold {
+    font-size: var(--fz-28);
+    font-weight: var(--fw-semi-bold);
+}
+.title-5-semi-bold {
+    font-size: var(--fz-24);
+    font-weight: var(--fw-semi-bold);
+}
+
+/* Subtitle */
+.subtitle-regular {
+    font-size: var(--fz-18);
+    font-weight: var(--fw-regular);
+}
+.subtitle-regular-semi-bold {
+    font-size: var(--fz-18);
+    font-weight: var(--fw-semi-bold);
+}
+
+/* Text */
+.text-regular {
+    font-size: var(--fz-16);
+    font-weight: var(--fw-regular);
+}
+.text-regular-medium {
+    font-size: var(--fz-16);
+    font-weight: var(--fw-medium);
+}
+.text-regular-semi-bold {
+    font-size: var(--fz-16);
+    font-weight: var(--fw-medium);
+}
+.text-small {
+    font-size: var(--fz-14);
+    font-weight: var(--fw-regular);
+}
+.text-small-medium {
+    font-size: var(--fz-14);
+    font-weight: var(--fw-medium);
+}
