@@ -26,6 +26,7 @@
     "init-msw": "msw init public/"
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.26.3",
     "@storybook/addon-essentials": "^8.4.7",
     "@storybook/addon-interactions": "^8.4.7",
     "@storybook/addon-links": "^8.4.7",
