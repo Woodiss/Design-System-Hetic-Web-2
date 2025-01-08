@@ -1,21 +1,45 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import PropTypes from 'prop-types';
 import './input.css';
+import { Text } from '../text/Text';
+import eyeOpenIcon from '../assets/eye-password-open.svg'
+import eyeCloseIcon from '../assets/eye-password-close.svg'
 
-export const Input = ({ id, primary, type, placeholder, label, error, value, name, ...props }) => {
+export const Input = ({ id, type, placeholder, label, error, defaultValue, name, ...props }) => {
+  const [isPasswordVisible, setIsPasswordVisible] = useState(false);
 
+  const togglePasswordVisibility = () => {
+    setIsPasswordVisible(!isPasswordVisible);
+  };
+
+  const inputType = type === 'password' && isPasswordVisible ? 'text' : type;
   return (
-    <div className={`input-container ${primary ? 'input--primary' : ''}`}>
-      {label && <label htmlFor={id}>{label}</label>}
-      {error && <p className="input-error">{error}</p>}
-      <input
-        id={id}
-        type={type}
-        placeholder={placeholder}
-        value={value}
-        name={name}
-        {...props}
-      />
+    <div className={`input-container`}>
+      {label && <label className='text-regular-semi-bold' htmlFor={id}>{label}</label>}
+      {/* {error && <p className="input-error">{error}</p>} */}
+      {error && <Text tag={'p'} content={error} optionalClassName={'input-error'}/>}
+      <div className="input">
+        <input
+          id={id}
+          type={inputType}
+          placeholder={placeholder}
+          value={defaultValue}
+          name={name}
+          {...props}
+        />
+        {type === 'password' && (
+          <button
+            type="button"
+            className="password-toggle"
+            onClick={togglePasswordVisibility}
+          >
+            <img 
+              src={isPasswordVisible ? eyeCloseIcon : eyeOpenIcon} 
+              alt={isPasswordVisible ? 'Hide password' : 'Show password'} 
+            />
+          </button>
+        )}
+      </div>
     </div>
   );
 };
@@ -25,10 +49,6 @@ Input.propTypes = {
    * Unique identifier for the input field
    */
   id: PropTypes.string.isRequired,
-  /**
-   * Is this the principal call to action on the page?
-   */
-  primary: PropTypes.bool,
   /**
    * Type of the input (e.g., text, email, password, etc.)
    */
@@ -52,15 +72,14 @@ Input.propTypes = {
   /**
    * Value for the input
    */
-  value: PropTypes.string,  
+  defaultValue: PropTypes.string,  
 };
 
 Input.defaultProps = {
-  primary: false,
   type: 'text',
   placeholder: '',
   label: '',
   error: '',
   name: "",
-  value: ""
+  defaultValue: ""
 };

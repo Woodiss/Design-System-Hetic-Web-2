@@ -1,54 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* Inter Font*/
+@font-face {
+    font-family: 'Inter';
+    src: url('../../assets/font/Inter-VariableFont_opsz,wght.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* Title */
-.title-1-semi-bold {
+.title-1 {
     font-size: var(--fz-48);
     font-weight: var(--fw-semi-bold);
 }
-.title-2-semi-bold {
+.title-2 {
     font-size: var(--fz-40);
     font-weight: var(--fw-semi-bold);
 }
-.title-3-semi-bold {
+.title-3 {
     font-size: var(--fz-32);
     font-weight: var(--fw-semi-bold);
 }
-.title-4-semi-bold {
+.title-4{
     font-size: var(--fz-28);
     font-weight: var(--fw-semi-bold);
 }
-.title-5-semi-bold {
+.title-5 {
     font-size: var(--fz-24);
     font-weight: var(--fw-semi-bold);
 }
 
 /* Subtitle */
-.subtitle-regular {
+.subtitle-1 {
     font-size: var(--fz-18);
     font-weight: var(--fw-regular);
 }
-.subtitle-regular-semi-bold {
+.subtitle-2 {
     font-size: var(--fz-18);
     font-weight: var(--fw-semi-bold);
 }
 
 /* Text */
-.text-regular {
+.text-1 {
+    font-size: var(--fz-16);
+    font-weight: var(--fw-medium);
+}
+.text-2 {
+    font-size: var(--fz-16);
+    font-weight: var(--fw-medium);
+}
+.text-3{
     font-size: var(--fz-16);
     font-weight: var(--fw-regular);
 }
-.text-regular-medium {
-    font-size: var(--fz-16);
+.text-4{
+    font-size: var(--fz-14);
     font-weight: var(--fw-medium);
 }
-.text-regular-semi-bold {
-    font-size: var(--fz-16);
-    font-weight: var(--fw-medium);
-}
-.text-small {
+.text-5{
     font-size: var(--fz-14);
     font-weight: var(--fw-regular);
 }
-.text-small-medium {
-    font-size: var(--fz-14);
-    font-weight: var(--fw-medium);
-}
+
+
+
+
