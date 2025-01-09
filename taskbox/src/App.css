@@ -1,4 +1,4 @@
-@import '../taskbox/src/style/global.css';
+@import './style/global.css';
 
 body {
   background-color: #fff;
@@ -9,4 +9,3 @@ body {
   justify-content: center;
   min-height: 100vh;
 }
-

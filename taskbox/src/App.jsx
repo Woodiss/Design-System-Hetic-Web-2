@@ -3,12 +3,19 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { Button } from './components/button/Button'
+import { BrowserRouter, Link, Route, Routes, NavLink } from 'react-router-dom';
 
 function App() {
-  // const [count, setCount] = useState(0)
 
   return (
-    <Button content={'testtt'} type={'submit'} isDisabled={false}/>
+    <>
+      <BrowserRouter>
+        <Button content={'testtt'} type={'submit'} isDisabled={false}/>
+        <Routes>
+          <Route path="/testt" element={<Button content={'testtt'} type={'submit'} isDisabled={false}/>} />
+        </Routes>
+      </BrowserRouter>
+    </>
   )
 }
 
