@@ -3,21 +3,30 @@ name: Deploy to Chromatic
 on: [push, workflow_dispatch]
 
 jobs:
-  chromatic-deploy:
+  example-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Check out repository
         uses: actions/checkout@v3
 
-      - name: Install dependencies
-        run: |
-          cd taskbox
-          npm install
+      - name: Say hello
+        run: echo "Hello World"
+# jobs:
+#   chromatic-deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout repository
+#         uses: actions/checkout@v3
 
-      - name: Build Storybook
-        run: npm run build-storybook
+#       - name: Install dependencies
+#         run: |
+#           cd taskbox
+#           npm install
 
-      - name: Publish to Chromatic
-        run: npx chromatic --project-token=$CHROMATIC_PROJECT_TOKEN
-        env:
-          CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+#       - name: Build Storybook
+#         run: npm run build-storybook
+
+#       - name: Publish to Chromatic
+#         run: npx chromatic --project-token=$CHROMATIC_PROJECT_TOKEN
+#         env:
+#           CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
