@@ -1,4 +1,44 @@
 :root {
+    /* COLORS  VIOLET */
+    --violet-950:#2E1065;
+    --violet-900:#4C1D95;
+    --violet-800:#5B21B6;
+    --violet-700:#6D28D9;
+    --violet-600:#7C3AED;
+    --violet-500:#8B5CF6;
+    --violet-400:#A78BFA;
+    --violet-300:#C4B5FD;
+
+     /* COLORS  RED */
+     --red-950:#450A0A;
+     --red-900:#7F1D1D;
+     --red-800:#991B1B;
+     --red-700:#B91C1C;
+     --red-600:#DC2626;
+     --red-500:#EF4444;
+     --red-400:#F87171;
+     --red-300:#FCA5A5;
+
+     /* COLORS  GRAY */
+     --gray-950:#030712;
+     --gray-900:#111827;
+     --gray-800:#1F2937;
+     --gray-700:#374151;
+     --gray-600:#4B5563;
+     --gray-500:#6B7280;
+     --gray-400:#9CA3AF;
+     --gray-300:#D1D5DB;
+
+     /* COLORS  INDIGO */
+     --indigo-950:#1E1B4B;
+     --indigo-900:#312E81;
+     --indigo-800:#3730A3;
+     --indigo-700:#4338CA;
+     --indigo-600:#4F46E5;
+     --indigo-500:#6366F1;
+     --indigo-400:#818CF8;     
+     --indigo-300:#A5B4FC;
+
     /* COLORS */
     --primary-color: #6729FF;
     --primary-color-hover: #4000DD;
