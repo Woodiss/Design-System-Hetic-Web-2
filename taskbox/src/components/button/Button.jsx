@@ -15,7 +15,6 @@ export const Button = ({ type, content, isDisabled, onClick, ...props}) => {
       { ...props }
     >
       {content}
-      
     </button>
   );
 };

@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "storybook dev",
+    "build-storybook": "storybook build"
+  },
+  "devDependencies": {
+    "chromatic": "^11.22.1"
+  }
+}
