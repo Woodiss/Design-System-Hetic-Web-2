@@ -12,7 +12,7 @@ export default {
       type: {
         control: 'select',
         options: ['text', 'password', 'email', 'number'],
-      },
+      }
     }
 };
 
@@ -23,7 +23,8 @@ export const Regular = {
     type: "text",
     label: "Label",
     placeholder: "Enter text",
-    error: ""
+    error: "",
+    isRequired: false
   },
 };
 

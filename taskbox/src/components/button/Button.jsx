@@ -7,7 +7,7 @@ import './button.css';
  */
 export const Button = ({ type, content }) => {
   return (
-    <button
+    <button className='btn'
       type={type}
       // className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
     >
