@@ -7,7 +7,7 @@ import eyeOpenIcon from '../assets/eye-password-open.svg'
 import eyeCloseIcon from '../assets/eye-password-close.svg'
 import errorIcon from '../assets/errorIcon.svg'
 
-export const Input = ({ id, type, placeholder, label, error, defaultValue, name, ...props }) => {
+export const Input = ({ id, type, placeholder, label, error, defaultValue, name, isRequired, ...props }) => {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
 
   const togglePasswordVisibility = () => {
@@ -30,8 +30,9 @@ export const Input = ({ id, type, placeholder, label, error, defaultValue, name,
           id={id}
           type={inputType}
           placeholder={placeholder}
-          value={defaultValue}
+          {...(defaultValue && { value: defaultValue })}
           name={name}
+          required={isRequired}
           {...props}
         />
         {type === 'password' && (
@@ -79,7 +80,12 @@ Input.propTypes = {
   /**
    * Value for the input
    */
-  defaultValue: PropTypes.string,  
+  defaultValue: PropTypes.string,
+  /**
+   * Value for the input
+   */
+  isRequired: PropTypes.bool,
+  
 };
 
 Input.defaultProps = {
@@ -88,5 +94,6 @@ Input.defaultProps = {
   label: '',
   error: '',
   name: "",
-  defaultValue: ""
+  defaultValue: "",
+  isRequired: false
 };

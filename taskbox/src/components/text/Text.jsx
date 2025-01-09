@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
 import './text.css';
 
-export const Text = ({ tag, content, styleTest, optionalClassName , ...props }) => {
+export const Text = ({ tag, content, styleText, optionalClassName , ...props }) => {
     if (!tag) {
         return content
     }
     const Tag = tag; // Assure-toi que 'tag' est une chaîne valide représentant un élément HTML.
     return (
-      <Tag className={`${styleTest} ${optionalClassName}`} {...props}>
+      <Tag className={`${styleText} ${optionalClassName}`} {...props}>
         {content}
       </Tag>
     );
@@ -25,7 +25,7 @@ Text.propTypes = {
   /**
    * Font options of the text
    */
-  styleTest: PropTypes.string,    
+  styleText: PropTypes.string,    
   /**
    * Set optional Class for the tag element
    */
@@ -36,6 +36,6 @@ Text.propTypes = {
 Text.defaultProps = {
   tag: null,
   content: "Content",
-  styleTest: "text-3",
+  styleText: "text-3",
   optionalClassName: null
 };
