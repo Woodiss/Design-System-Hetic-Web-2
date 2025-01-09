@@ -1,7 +1,7 @@
-@import '../taskbox/src/style/global.css';
+@import './src/style/global.css';
 
 body {
-  background-color: #fff;
+  /* background-color: #fff; */
   background: url("/public/images/background-form.png") center center no-repeat fixed;
   background-size: cover;
   display: flex;
@@ -9,4 +9,3 @@ body {
   justify-content: center;
   min-height: 100vh;
 }
-
