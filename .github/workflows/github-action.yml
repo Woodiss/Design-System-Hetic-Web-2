@@ -1,6 +1,9 @@
 name: Deploy to Chromatic
 
-on: [push, workflow_dispatch]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   chromatic-deploy:
