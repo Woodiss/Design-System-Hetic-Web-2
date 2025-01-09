@@ -5,4 +5,10 @@
 body {
     font-family: "Inter", sans-serif;
     background: var(--neutral-50);
-}                     
+    background: url("/images/background-form.png") center center no-repeat fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
