@@ -21,6 +21,7 @@ export default {
   },
 };
 
+
 export const Regular = {
   args: {
     label: "Label",
