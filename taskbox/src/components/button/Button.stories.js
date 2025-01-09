@@ -20,7 +20,7 @@ export default {
 export const Regular = {
   args: {
     type: 'submit',
-    content: 'Button',
+    content: 'Buttoneeeeeeee',
     isDisabled: false,
     onClick: fn()
   },

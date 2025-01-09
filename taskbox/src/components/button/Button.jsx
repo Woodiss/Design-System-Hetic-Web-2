@@ -25,7 +25,7 @@ Button.propTypes = {
    */
   type: PropTypes.oneOf(['submit', 'button']),
   /**
-   * Button activity state
+   * Button is disabled
    */
   isDisabled: PropTypes.bool,
   /**

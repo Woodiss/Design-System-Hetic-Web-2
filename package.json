@@ -1,0 +1,11 @@
+{
+  "name": "design-system-hetic-web-2",
+  "version": "1.0.0",
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "devDependencies": {
+    "chromatic": "^11.22.1"
+  }
+}
