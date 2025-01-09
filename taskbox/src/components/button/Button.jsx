@@ -1,17 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './button.css';
+import { Text } from '../text/Text';
 
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({ type, content }) => {
+export const Button = ({ type, content, isDisabled, onClick, ...props}) => {
   return (
     <button
       type={type}
-      // className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
+      disabled={isDisabled}
+      onClick={onClick}
+      { ...props }
     >
       {content}
+      
     </button>
   );
 };
@@ -21,6 +25,10 @@ Button.propTypes = {
    * How large should the button be?
    */
   type: PropTypes.oneOf(['submit', 'button']),
+  /**
+   * Button activity state
+   */
+  isDisabled: PropTypes.bool,
   /**
    * Button contents
    */
@@ -35,4 +43,5 @@ Button.defaultProps = {
   content: 'Button',
   type: 'button',
   onClick: undefined,
+  isDisabled: false
 };

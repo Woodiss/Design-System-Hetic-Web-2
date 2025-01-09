@@ -21,5 +21,7 @@ export const Regular = {
   args: {
     type: 'submit',
     content: 'Button',
+    isDisabled: false,
+    onClick: fn()
   },
 };
