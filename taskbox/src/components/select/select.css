@@ -1,0 +1,41 @@
+@import '../../style/global.css';
+
+.select-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.select {
+  width: 100%;
+  min-width: 200px;
+  font-size: var(--fz-16);
+  padding: 10px;
+  border: 1px solid var(--primary-color);
+
+}
+
+.select:focus {
+  border-color: transparent;
+  outline: var(--primary-outline); 
+}
+
+.select-error {
+  border-color: var(--error-color);
+}
+
+.select-error-message {
+  color: var(--error-color);
+  font-size: var(--fz-14);
+}
+
+.select-error-message .error-icon {
+  display: inline-block;
+  width: 200px;
+  height: 16px;
+  background-image: url('../assets/errorIcon.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+  color: var(--error-color);
+}
