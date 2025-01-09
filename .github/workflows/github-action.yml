@@ -15,9 +15,13 @@ jobs:
           npm install
 
       - name: Build Storybook
-        run: npm run build-storybook
+        run: |
+          cd taskbox
+          npm run build-storybook
 
       - name: Publish to Chromatic
-        run: npx chromatic --project-token=$CHROMATIC_PROJECT_TOKEN
+        run: |
+          cd taskbox
+          npx chromatic --project-token=$CHROMATIC_PROJECT_TOKEN
         env:
           CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
