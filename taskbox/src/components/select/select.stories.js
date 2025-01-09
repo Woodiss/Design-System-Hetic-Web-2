@@ -1,4 +1,4 @@
-import { Select } from './select';
+import { Select } from './Select';
 import { fn } from '@storybook/test';
 
 export default {
