@@ -27,7 +27,7 @@
 import { Form } from './Form';
 import { Input } from '../input/Input';
 import { Button } from '../button/Button';
-import { Link } from '../link/Link';
+import { LinkTag } from '../link/LinkTag';
 import { fn } from '@storybook/test';
 
 export default {
@@ -63,7 +63,7 @@ export const LoginForm = {
       <>
         <Input type="email" placeholder="Your Email" label="Email" name="email" />
         <Input type="password" placeholder="Your Password" label="Password" name="password" />
-        <Link content="Forgot Password?" link="#" />
+        <LinkTag content="Forgot Password?" link="#" />
         <Button type="submit" content="Login" />
       </>
     ),
