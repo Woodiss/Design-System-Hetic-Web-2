@@ -24,4 +24,4 @@ jobs:
           cd taskbox
           npx chromatic --project-token=$CHROMATIC_PROJECT_TOKEN
         env:
-          CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          CHROMATIC_PROJECT_TOKEN: ${{ secret.CHROMATIC_PROJECT_TOKEN }}
