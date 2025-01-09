@@ -22,7 +22,7 @@ function App() {
               <Form title="Login Form" subtitle="Please enter your credentials">
                 <Input type="email" placeholder="Your Email" label="Email" name="email" />
                 <Input type="password" placeholder="Your Password" label="Password" name="password" />
-                <NavLink>Test</NavLink>
+                {/* <NavLink>Test</NavLink> */}
                 <LinkTag content="Forgot Password?" link="/forgot-password" />
                 <Button type="submit" content="Login" />
               </Form>
@@ -33,7 +33,6 @@ function App() {
             element={
               <Form title="Rest your password" subtitle="Please enter your details so we can send you a email to reset your password.">
                 <Input type="email" placeholder="Your Email" label="Email" name="email" />
-                <Select options={["test", "test"]} label={"test"}/>
                 <Button type="submit" content="Send" />
               </Form>
             }
