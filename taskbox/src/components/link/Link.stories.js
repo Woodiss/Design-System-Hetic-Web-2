@@ -20,4 +20,3 @@ export const Regular = {
     link:"index.html",
   },
 };
-
