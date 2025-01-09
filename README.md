@@ -1,8 +1,8 @@
 # Design-System-Hetic-Web-2
 ## start le story book :
 ```bash
-npm install
 cd taskbox
+npm install
 npm run storybook
 ```
 
