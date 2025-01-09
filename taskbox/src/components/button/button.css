@@ -1,15 +1,14 @@
 @import '../../style/global.css';
 
-button {
+.btn {
   background-color: var(--primary-color);
   border: none;
-  padding: 10px 20px;
+  padding: var(--gap-4) var(--gap-3);
   border-radius: var(--circle-radius);
   cursor: pointer;
   transition: background-color 0.3s;
   width: 100%;
   color: var(--text-color-light);
-  background-color: red;
 
   &:hover {
     background-color: var(--primary-color-hover);

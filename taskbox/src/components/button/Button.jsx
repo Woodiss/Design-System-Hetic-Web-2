@@ -8,7 +8,7 @@ import { Text } from '../text/Text';
  */
 export const Button = ({ type, content, isDisabled, onClick, ...props}) => {
   return (
-    <button
+    <button className='btn'
       type={type}
       disabled={isDisabled}
       onClick={onClick}
