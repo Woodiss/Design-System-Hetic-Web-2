@@ -57,4 +57,5 @@ Select.propTypes = {
 Select.defaultProps = {
   label: '',
   error: '',
+  id: 'selectId',
 };
