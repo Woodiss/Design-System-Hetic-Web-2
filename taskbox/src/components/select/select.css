@@ -54,5 +54,5 @@
   right: 15px;
   pointer-events: none;
   font-size: var(--fz-16);
-  color: #666;
+  color: var(--regular-icon);
 }

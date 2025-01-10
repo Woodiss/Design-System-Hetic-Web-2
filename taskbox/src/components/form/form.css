@@ -8,6 +8,7 @@
     background: var(--basics-1);
     padding: var(--gap-2);
     border-radius: var(--rounded-5);
+    width: 500px;
 }
 .header-form {
     display: flex;
@@ -23,4 +24,11 @@ form {
 }
 form button:not(.input button) {
     margin-top: var(--gap-2);
+}
+
+@media (max-width: 500px) {
+    .container-form {
+        width: 100%;
+        padding: var(--gap-3);
+    }
 }
