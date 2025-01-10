@@ -28,11 +28,3 @@ export const Regular = {
     error: "",
   },
 };
-
-export const WithError = {
-  args: {
-    label: "Label",
-    options: ["1 option", "1 option", "1 option"],
-    error: "Error message",
-  },
-};

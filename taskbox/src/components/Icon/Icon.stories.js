@@ -1,24 +1,20 @@
-import { Icon } from './Icon';
-import errorIcon from '../../components/assets/errorIcon.svg';
+import { Icon } from "./Icon";
 
 export default {
-  title: 'Components/Icon',
+  title: "Components/Icon",
   component: Icon,
   parameters: {
-    layout: 'centered',
+    layout: "centered",
   },
-  tags: ['autodocs'],
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
+  tags: ["autodocs"]
 };
 
 export const Default = {
   args: {
-    src: errorIcon,
-    alt: "",
-    size: '50px',
-    className: "",
-    backgroundColor: "#000000",
+    name: "errorIcon",
+    size: "60px",
+    ariaLabel: "errorIcon",
+    title: "errorIcon",
+    role: "img",
   },
 };

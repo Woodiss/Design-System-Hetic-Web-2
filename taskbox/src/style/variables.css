@@ -1,5 +1,6 @@
 :root {
     /* COLORS */
+
     /* Colors Basics */
     --basics-1: #ffffff;
     --basics-2: #000000;
@@ -24,6 +25,9 @@
     --violet-500:#8B5CF6;
     --violet-400:#A78BFA;
     --violet-300:#C4B5FD;
+    --violet-200:#ddd6fe;
+    --violet-100:#ede9fe;
+    --violet-50:#f5f3ff;
 
     /* Colors Red */
     --red-950:#450A0A;
@@ -34,6 +38,9 @@
     --red-500:#EF4444;
     --red-400:#F87171;
     --red-300:#FCA5A5;
+    --red-200:#fecaca;
+    --red-100:#fee2e2;
+    --red-50:#fef2f2;
 
     /* Colors Gray */
     --gray-950:#030712;
@@ -44,6 +51,9 @@
     --gray-500:#6B7280;
     --gray-400:#9CA3AF;
     --gray-300:#D1D5DB;
+    --gray-200:#e5e7eb;
+    --gray-100:#f3f4f6;
+    --gray-50:#f9fafb;
 
     /* Colors Indigo */
     --indigo-950:#1E1B4B;
@@ -54,6 +64,9 @@
     --indigo-500:#6366F1;
     --indigo-400:#818CF8;     
     --indigo-300:#A5B4FC;
+    --indigo-200:#c7d2fe;
+    --indigo-100:#e0e7ff;
+    --indigo-50:#eef2ff;
     
      /* Custom Colors */
     --primary-color: var(--violet-600);
@@ -61,8 +74,13 @@
     --tertiary-color: var(--violet-950);
     --error-color: var(--red-600);
     --disabled-color: var(--gray-400);
+    --regular-icon: var(--gray-400);
     --text-color-light: #FFFFFF;
     --text-color-dark: #000000;
+
+    /* Colors state */
+    --accent-danger:  var(--red-600);
+    --accent-disabled:  var(--gray-400);
 
     /* FONTS */
 

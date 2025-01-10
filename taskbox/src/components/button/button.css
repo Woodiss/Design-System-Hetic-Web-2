@@ -20,7 +20,8 @@
   }
 
   &:focus {
-    outline: var(--regular-outline);
+    outline: 2px solid var(--basics-1);
+    box-shadow: 0 0 0 2px transparent, 0 0 0 4px var(--primary-color);
   }
 
   &:active {

@@ -16,11 +16,11 @@ export const LinkTag = ({content, link,}) => {
 
 LinkTag.propTypes = {
   /**
-   * link contents
+   * Text of the link
    */
   content: PropTypes.string.isRequired,
   /**
-   * link url
+   * url of the link
    */
   link: PropTypes.string.isRequired,
 

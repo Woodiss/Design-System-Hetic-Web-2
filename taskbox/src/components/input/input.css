@@ -12,6 +12,7 @@
 }
 .input-error {
     color: var(--error-color);
+    
 }
 input {
     width: 100%;
@@ -25,8 +26,8 @@ input:focus {
     border-bottom: 2px solid transparent;
     outline: var(--primary-outline)!important;
 }
-input:invalid {
-    outline: var(--error-color);
+.input.input-error input {
+    border: 2px solid var(--error-color);
 }
 .input {
     position: relative;
@@ -42,4 +43,7 @@ input:invalid {
     cursor: pointer;
     border: none;
     background: none;
+}
+.input button:focus {
+    outline: var(--primary-outline);
 }
