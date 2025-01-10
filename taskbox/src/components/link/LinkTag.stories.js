@@ -1,10 +1,10 @@
 import { fn } from '@storybook/test';
-import { Link } from './link';
+import { LinkTag } from './LinkTag';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 export default {
-  title: 'Example/Link',
-  component: Link,
+  title: 'Components/LinkTag',
+  component: LinkTag,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
     layout: 'centered',
@@ -20,4 +20,3 @@ export const Regular = {
     link:"index.html",
   },
 };
-

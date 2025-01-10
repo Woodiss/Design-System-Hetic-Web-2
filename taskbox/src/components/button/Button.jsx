@@ -1,50 +1,46 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './button.css';
+import { Text } from '../text/Text';
 
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+export const Button = ({ type, content, isDisabled, onClick, ...props}) => {
   return (
-    <button
-      type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
-      style={backgroundColor && { backgroundColor }}
-      {...props}
+    <button className='btn'
+      type={type}
+      disabled={isDisabled}
+      onClick={onClick}
+      { ...props }
     >
-      {label}
+      {content}
     </button>
   );
 };
 
 Button.propTypes = {
   /**
-   * Is this the principal call to action on the page?
-   */
-  primary: PropTypes.bool,
-  /**
-   * What background color to use
-   */
-  backgroundColor: PropTypes.string,
-  /**
    * How large should the button be?
    */
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  type: PropTypes.oneOf(['submit', 'button']),
+  /**
+   * Button is disabled
+   */
+  isDisabled: PropTypes.bool,
   /**
    * Button contents
    */
-  label: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
   /**
    * Optional click handler
    */
-  onClick: PropTypes.func,
+  onClick: PropTypes.func
 };
 
 Button.defaultProps = {
-  backgroundColor: null,
-  primary: false,
-  size: 'medium',
+  content: 'Button',
+  type: 'button',
   onClick: undefined,
+  isDisabled: false
 };

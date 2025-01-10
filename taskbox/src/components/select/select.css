@@ -1,0 +1,58 @@
+@import '../../style/global.css';
+
+.select-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-4);
+}
+
+.select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  width: 100%;
+  min-width: 200px;
+  font-size: var(--fz-16);
+  padding: var(--gap-4);
+  border: 2px solid var(--primary-color);
+  cursor: pointer;
+}
+
+.select:hover {
+  border-color: var(--secondary-color);
+}
+
+.select:focus {
+  border-color: transparent;
+  outline: var(--primary-outline);
+}
+
+.select-error {
+  .select {
+    border-color: var(--error-color);
+  }
+
+  .input-message {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-4);
+    color: var(--error-color);
+    font-size: var(--fz-14);
+  }
+}
+
+.select-relative {
+  position: relative;
+}
+
+.select-wrapper::after {
+  content: "▼";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  pointer-events: none;
+  font-size: var(--fz-16);
+  color: #666;
+}

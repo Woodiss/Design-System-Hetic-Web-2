@@ -2,10 +2,12 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 import './input.css';
 import { Text } from '../text/Text';
+import { Icon } from '../Icon/Icon';
 import eyeOpenIcon from '../assets/eye-password-open.svg'
 import eyeCloseIcon from '../assets/eye-password-close.svg'
+import errorIcon from '../assets/errorIcon.svg'
 
-export const Input = ({ id, type, placeholder, label, error, defaultValue, name, ...props }) => {
+export const Input = ({ id, type, placeholder, label, error, defaultValue, name, isRequired, ...props }) => {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
 
   const togglePasswordVisibility = () => {
@@ -17,14 +19,20 @@ export const Input = ({ id, type, placeholder, label, error, defaultValue, name,
     <div className={`input-container`}>
       {label && <label className='text-regular-semi-bold' htmlFor={id}>{label}</label>}
       {/* {error && <p className="input-error">{error}</p>} */}
-      {error && <Text tag={'p'} content={error} optionalClassName={'input-error'}/>}
+      {error && (
+        <div className="input-message" style={{color: "blue"}}>
+          <Icon src={errorIcon} alt={"Error Icon"} size={20}/>
+          <Text tag={'p'} content={error} optionalClassName={'input-error'}/>
+        </div>
+        )}
       <div className="input">
         <input
           id={id}
           type={inputType}
           placeholder={placeholder}
-          value={defaultValue}
+          {...(defaultValue && { value: defaultValue })}
           name={name}
+          required={isRequired}
           {...props}
         />
         {type === 'password' && (
@@ -72,7 +80,12 @@ Input.propTypes = {
   /**
    * Value for the input
    */
-  defaultValue: PropTypes.string,  
+  defaultValue: PropTypes.string,
+  /**
+   * Value for the input
+   */
+  isRequired: PropTypes.bool,
+  
 };
 
 Input.defaultProps = {
@@ -81,5 +94,6 @@ Input.defaultProps = {
   label: '',
   error: '',
   name: "",
-  defaultValue: ""
+  defaultValue: "",
+  isRequired: false
 };

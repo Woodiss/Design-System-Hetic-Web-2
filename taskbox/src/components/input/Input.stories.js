@@ -2,7 +2,7 @@ import { Input } from './Input';
 import { fn } from '@storybook/test';
 
 export default {
-  title: 'Example/Input',
+  title: 'Components/Input',
   component: Input,
   parameters: {
     layout: 'centered',
@@ -12,7 +12,7 @@ export default {
       type: {
         control: 'select',
         options: ['text', 'password', 'email', 'number'],
-      },
+      }
     }
 };
 
@@ -23,7 +23,8 @@ export const Regular = {
     type: "text",
     label: "Label",
     placeholder: "Enter text",
-    error: ""
+    error: "",
+    isRequired: false
   },
 };
 

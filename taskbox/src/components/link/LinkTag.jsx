@@ -1,19 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './link.css';
+import { NavLink } from 'react-router-dom';
 
 /**
  * Primary UI component for user interaction
  */
-export const Link = ({content, link,}) => {
+export const LinkTag = ({content, link,}) => {
   return (
-    <a href={link}>
+    <NavLink to={link}>
       {content}
-    </a>
+    </NavLink>
   );
 };
 
-Link.propTypes = {
+LinkTag.propTypes = {
   /**
    * link contents
    */
@@ -25,7 +26,7 @@ Link.propTypes = {
 
 };
 
-Link.defaultProps = {
+LinkTag.defaultProps = {
   content:"link",
   link:"index.html"
 };

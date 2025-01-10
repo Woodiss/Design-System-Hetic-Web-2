@@ -4,4 +4,15 @@
 
 body {
     font-family: "Inter", sans-serif;
-}                     
+    background: var(--neutral-50);
+}
+
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("/images/background-form.png") center center no-repeat fixed;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vw;
+}

@@ -1,11 +1,68 @@
 :root {
     /* COLORS */
-    --primary-color: #6729FF;
-    --primary-color-hover: #4000DD;
-    --push-color: #260084;
-    --error-color: #F44336;
-    --disabled-color: #B0AFAF;
+    /* Colors Basics */
+    --basics-1: #ffffff;
+    --basics-2: #000000;
+    /* Colors Neutral */
+    --neutral-950:#0a0a0a;
+    --neutral-900:#171717;
+    --neutral-800:#262626;
+    --neutral-700:#404040;
+    --neutral-600:#525252;
+    --neutral-500:#737373;
+    --neutral-400:#a3a3a3;
+    --neutral-300:#d4d4d4;
+    --neutral-200:#e5e5e5;
+    --neutral-100:#f5f5f5;
+    --neutral-50:#fafafa;
+    /* Colors Violet */
+    --violet-950:#2E1065;
+    --violet-900:#4C1D95;
+    --violet-800:#5B21B6;
+    --violet-700:#6D28D9;
+    --violet-600:#7C3AED;
+    --violet-500:#8B5CF6;
+    --violet-400:#A78BFA;
+    --violet-300:#C4B5FD;
+
+    /* Colors Red */
+    --red-950:#450A0A;
+    --red-900:#7F1D1D;
+    --red-800:#991B1B;
+    --red-700:#B91C1C;
+    --red-600:#DC2626;
+    --red-500:#EF4444;
+    --red-400:#F87171;
+    --red-300:#FCA5A5;
+
+    /* Colors Gray */
+    --gray-950:#030712;
+    --gray-900:#111827;
+    --gray-800:#1F2937;
+    --gray-700:#374151;
+    --gray-600:#4B5563;
+    --gray-500:#6B7280;
+    --gray-400:#9CA3AF;
+    --gray-300:#D1D5DB;
+
+    /* Colors Indigo */
+    --indigo-950:#1E1B4B;
+    --indigo-900:#312E81;
+    --indigo-800:#3730A3;
+    --indigo-700:#4338CA;
+    --indigo-600:#4F46E5;
+    --indigo-500:#6366F1;
+    --indigo-400:#818CF8;     
+    --indigo-300:#A5B4FC;
     
+     /* Custom Colors */
+    --primary-color: var(--violet-600);
+    --secondary-color: var(--violet-900);
+    --tertiary-color: var(--violet-950);
+    --error-color: var(--red-600);
+    --disabled-color: var(--gray-400);
+    --text-color-light: #FFFFFF;
+    --text-color-dark: #000000;
 
     /* FONTS */
 
@@ -33,6 +90,22 @@
 
     /* OUTLINES */
     --primary-outline: 2px solid var(--primary-color);
-    --regular-outline: 2px solid var(--push-color);
+    --regular-outline: 2px solid var(--tertiary-color);
     --error-outline: 2px solid var(--error-color);
+    
+    /* GAPS */
+    --gap-1: 3.75rem; 
+    --gap-2: 2.5rem; 
+    --gap-3: 1.25rem; 
+    --gap-4: 0.625rem; 
+    --gap-5: 0.313rem; 
+
+    /* BORDER RADIUS */
+    --rounded-1: 999;
+    --rounded-2: 40px;
+    --rounded-3: 30px;
+    --rounded-4: 20px;
+    --rounded-5: 15px;
+    --rounded-6: 10px;
+    --rounded-7: 5px;
 }
