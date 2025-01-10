@@ -20,7 +20,7 @@ textarea {
     min-width: 200px;
     font-size: var(--fz-16);
     padding: var(--gap-4);
-    border: solid 1px var(--violet-600);
+    border: solid 2px var(--violet-600);
     resize: vertical;
 }
 

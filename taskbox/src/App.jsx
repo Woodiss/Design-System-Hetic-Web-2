@@ -20,8 +20,8 @@ function App() {
             path="/"
             element={
               <Form title="Login Form" subtitle="Please enter your credentials">
-                <Input type="email" placeholder="Your Email" label="Email" name="email" />
-                <Input type="password" placeholder="Your Password" label="Password" name="password" />
+                <Input type="email" placeholder="Your Email" label="Email" name="email" isRequired="true"/>
+                <Input type="password" placeholder="Your Password" label="Password" name="password" isRequired="true"/>
                 <LinkTag content="Forgot Password?" link="/forgot-password" />
                 <Button type="submit" content="Login" />
               </Form>
@@ -31,7 +31,7 @@ function App() {
             path="/forgot-password"
             element={
               <Form title="Rest your password" subtitle="Please enter your details so we can send you a email to reset your password.">
-                <Input type="email" placeholder="Your Email" label="Email" name="email" />
+                <Input type="email" placeholder="Your Email" label="Email" name="email"isRequired="true" />
                 <Button type="submit" content="Send" />
               </Form>
             }
@@ -40,9 +40,9 @@ function App() {
             path="/contact"
             element={
               <Form title="Contact support" subtitle="If you have any problem you can contact support.">
-                <Input type="firstname" placeholder="Your First Name" label="First name" name="firstname" />
-                <Input type="lastname" placeholder="Your Last Name" label="Last name" name="lastname" />
-                <Input type="email" placeholder="Your Email" label="Email" name="email" />
+                <Input type="firstname" placeholder="Your First Name" label="First name" name="firstname" isRequired="true"/>
+                <Input type="lastname" placeholder="Your Last Name" label="Last name" name="lastname" isRequired="true"/>
+                <Input type="email" placeholder="Your Email" label="Email" name="email" isRequired="true"/>
                 <Select label="Select a topic" name="topic" options={['General', 'Billing', 'Technical', 'Others']} />
                 <Textarea label="Message" placeholder="Your message" name="message" id="textarea" isRequired="true" />
                 <Button type="submit" content="Send" />
