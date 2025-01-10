@@ -11,7 +11,7 @@
   color: var(--text-color-light);
 
   &:hover {
-    background-color: var(--primary-color-hover);
+    background-color: var(--secondary-color);
   }
 
   &:disabled {
@@ -24,6 +24,6 @@
   }
 
   &:active {
-    background-color: var(--push-color);
+    background-color: var(--tertiary-color);
   }
 }

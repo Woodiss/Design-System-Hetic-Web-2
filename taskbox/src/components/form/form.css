@@ -19,7 +19,7 @@ form {
     display: flex;
     width: 100%;
     flex-direction: column;
-    gap: var(--gap-4);
+    gap: var(--gap-3);
 }
 form button:not(.input button) {
     margin-top: var(--gap-2);

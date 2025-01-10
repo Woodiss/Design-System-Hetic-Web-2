@@ -36,6 +36,18 @@ function App() {
               </Form>
             }
           />
+          <Route
+            path="/contact"
+            element={
+              <Form title="Contact support" subtitle="If you have any problem you can contact support.">
+                <Input type="firstname" placeholder="Your First Name" label="First name" name="firstname" />
+                <Input type="lastname" placeholder="Your Last Name" label="Last name" name="lastname" />
+                <Input type="email" placeholder="Your Email" label="Email" name="email" />
+                <Select label="Select a topic" name="topic" options={['General', 'Billing', 'Technical', 'Others']} />
+                <Button type="submit" content="Send" />
+              </Form>
+            }
+          />
           {/* <Route path="/forgetPassword" element={<Button content={'testtt'} type={'submit'} isDisabled={false}/>} /> */}
         </Routes>
       </BrowserRouter>

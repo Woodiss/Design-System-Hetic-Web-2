@@ -8,7 +8,8 @@ import { Text } from '../text/Text';
 export const Select = ({ id, label, options, error, ...props }) => {
   return (
     
-    <div className={`select-container`}>
+    <div className={`select-container ${error ? 'select-error' : ''}`} 
+    >
       {label && <label htmlFor={id} className='text-regular-semi-bold'>{label}</label>}
 
 {error && (
@@ -18,14 +19,16 @@ export const Select = ({ id, label, options, error, ...props }) => {
         </div>
         )}
 
-      <div className={`select-wrapper ${error ? 'select-error' : ''}`}>
-        <select id={id} className={`select`} {...props}>
-          {options.map((option, index) => (
-            <option key={index} value={option}>
-              {option}
-            </option>
-          ))}
-        </select>
+      <div className='select-relative'>
+        <div className={`select-wrapper ${error ? 'select-error' : ''}`}>
+          <select id={id} className={`select`} {...props}>
+            {options.map((option, index) => (
+              <option key={index} value={option}>
+                {option}
+              </option>
+            ))}
+          </select>
+          </div>
       </div>
 
     </div>
