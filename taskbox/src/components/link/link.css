@@ -13,7 +13,7 @@ a {
 
   &:focus {
     color: var(--tertiary-color);
-    outline: var(--regular-outline);
+    outline: var(--primary-outline);
   }
 }
 

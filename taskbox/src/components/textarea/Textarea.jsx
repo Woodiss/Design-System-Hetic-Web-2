@@ -11,7 +11,7 @@ export const Textarea = ({ id, placeholder, label, error, defaultValue, name, is
       {label && <label className='text-regular-semi-bold' htmlFor={id}>{label}</label>}
       {error && (
         <div className="textarea-message" style={{color: "blue"}}>
-          <Icon src={errorIcon} alt={"Error Icon"} size={20}/>
+          <Icon size={'20px'} name={"errorIcon"} color={"var(--accent-danger)"} ariaLabel={"Error Icon"} title={"Error Icon"} role={"img"}/>
           <Text tag={'p'} content={error} optionalClassName={'textarea-error'}/>
         </div>
         )}
