@@ -7,25 +7,26 @@ import errorIcon from '../assets/errorIcon.svg'
 
 export const Textarea = ({ id, placeholder, label, error, defaultValue, name, isRequired, ...props }) => {
   return (
-    <div className={`input-container`}>
+    <div className={`textarea-container`}>
       {label && <label className='text-regular-semi-bold' htmlFor={id}>{label}</label>}
-      {/* {error && <p className="input-error">{error}</p>} */}
       {error && (
-        <div className="input-message" style={{color: "blue"}}>
+        <div className="textarea-message" style={{color: "blue"}}>
           <Icon src={errorIcon} alt={"Error Icon"} size={20}/>
-          <Text tag={'p'} content={error} optionalClassName={'input-error'}/>
+          <Text tag={'p'} content={error} optionalClassName={'textarea-error'}/>
         </div>
         )}
-      <div className="input">
-        <textarea
-          id={id}
-          placeholder={placeholder}
-          {...(defaultValue && { value: defaultValue })}
-          name={name}
-          required={isRequired}
-          {...props}
-        >
-        </textarea>
+      <div className="textarea-relative">
+        <div>
+          <textarea className={`textarea ${error ? 'textarea-error-outline' : ''}`}
+            id={id}
+            placeholder={placeholder}
+            {...(defaultValue && { value: defaultValue })}
+            name={name}
+            required={isRequired}
+            {...props}
+          >
+          </textarea>
+        </div>
       </div>
     </div>
   );

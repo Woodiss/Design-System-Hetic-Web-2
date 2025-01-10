@@ -33,7 +33,7 @@
     border-color: var(--error-color);
   }
 
-  .input-message {
+  .select-message {
     display: flex;
     align-items: center;
     gap: var(--gap-4);
