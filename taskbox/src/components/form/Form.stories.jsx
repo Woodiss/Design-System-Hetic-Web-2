@@ -1,29 +1,3 @@
-// import { Form } from './Form';
-// import { fn } from '@storybook/test';
-
-// export default {
-//   title: 'Components/Form',
-//   component: Form,
-//   parameters: {
-//     layout: 'centered',
-//   },
-//   tags: ['autodocs'],
-//     argTypes: {
-//       type: {
-//         control: 'select',
-//         options: ['text', 'password', 'email', 'number'],
-//       }
-//     }
-// };
-
-
-// export const Regular = {
-//   args: {
-//     title: "Form Title",
-//     subtitle: "Form subtitle",
-//   },
-// };
-
 import { Form } from './Form';
 import { Input } from '../input/Input';
 import { Button } from '../button/Button';
@@ -46,8 +20,8 @@ export const Regular = {
     subtitle: "Form subtitle",
     children: (
       <>
-        <Input type="text" placeholder="Your Name" label="Name" name="name" />
-        <Input type="email" placeholder="Your Email" label="Email" name="email" />
+        <Input id={"name"} type="text" placeholder="Your Name" label="Name" name="name" />
+        <Input id={"email"} type="email" placeholder="Your Email" label="Email" name="email" />
         <Button type="submit" content="Submit" />
       </>
     ),
@@ -61,8 +35,8 @@ export const LoginForm = {
     subtitle: "Please enter your details",
     children: (
       <>
-        <Input type="email" placeholder="Your Email" label="Email" name="email" />
-        <Input type="password" placeholder="Your Password" label="Password" name="password" />
+        <Input id={"email"} type="email" placeholder="Your Email" label="Email" name="email" />
+        <Input id={"password"} type="password" placeholder="Your Password" label="Password" name="password" />
         <LinkTag content="Forgot Password?" link="#" />
         <Button type="submit" content="Login" />
       </>
@@ -76,7 +50,7 @@ export const ResetPasswordForm = {
     subtitle: "Enter your credentials",
     children: (
       <>
-        <Input type="email" placeholder="Your Email" label="Email" name="email" />
+        <Input id={"email"} type="email" placeholder="Your Email" label="Email" name="email" />
         <Button type="submit" content="Send" />
       </>
     ),

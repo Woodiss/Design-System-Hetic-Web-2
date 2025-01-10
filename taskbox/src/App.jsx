@@ -9,6 +9,7 @@ import { Button } from "./components/button/Button";
 import { Select } from "./components/select/Select";
 import { Textarea } from "./components/textarea/Textarea";
 import { BrowserRouter, Route, Routes, NavLink } from "react-router-dom";
+import Logo from "./components/assets/discord.svg?react";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
                 <Input type="password" placeholder="Your Password" label="Password" name="password" isRequired="true"/>
                 <LinkTag content="Forgot Password?" link="/forgot-password" />
                 <Button type="submit" content="Login" />
+                <Logo />
               </Form>
             }
           />
@@ -43,7 +45,7 @@ function App() {
                 <Input type="firstname" placeholder="Your First Name" label="First name" name="firstname" isRequired="true"/>
                 <Input type="lastname" placeholder="Your Last Name" label="Last name" name="lastname" isRequired="true"/>
                 <Input type="email" placeholder="Your Email" label="Email" name="email" isRequired="true"/>
-                <Select label="Select a topic" name="topic" options={['General', 'Billing', 'Technical', 'Others']} />
+                <Select label="Select a topic" name="topic" options={["General", "Billing", "Technical", "Others"]} />
                 <Textarea label="Message" placeholder="Your message" name="message" id="textarea" isRequired="true" />
                 <Button type="submit" content="Send" />
               </Form>
