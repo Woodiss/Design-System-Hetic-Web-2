@@ -7,6 +7,7 @@ import { Input } from "./components/input/Input";
 import { LinkTag } from "./components/link/LinkTag";
 import { Button } from "./components/button/Button";
 import { Select } from "./components/select/Select";
+import { Textarea } from "./components/textarea/Textarea";
 import { BrowserRouter, Route, Routes, NavLink } from "react-router-dom";
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
                 <Input type="lastname" placeholder="Your Last Name" label="Last name" name="lastname" />
                 <Input type="email" placeholder="Your Email" label="Email" name="email" />
                 <Select label="Select a topic" name="topic" options={['General', 'Billing', 'Technical', 'Others']} />
+                <Textarea label="Message" placeholder="Your message" name="message" id="textarea" isRequired="true" />
                 <Button type="submit" content="Send" />
               </Form>
             }
