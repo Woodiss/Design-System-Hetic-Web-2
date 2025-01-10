@@ -10,7 +10,7 @@
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-
+  background: var(--basics-1);
   width: 100%;
   min-width: 200px;
   font-size: var(--fz-16);
