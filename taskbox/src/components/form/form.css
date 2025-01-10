@@ -15,6 +15,7 @@
     flex-direction: column;
     align-items: center;
     gap: var(--gap-4);
+    text-align: center;
 }
 form {
     display: flex;
