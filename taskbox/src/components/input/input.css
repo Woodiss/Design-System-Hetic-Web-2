@@ -26,7 +26,7 @@ input:focus {
     border-bottom: 2px solid transparent;
     outline: var(--primary-outline)!important;
 }
-input:invalid, .input.input-error input {
+.input.input-error input {
     border: 2px solid var(--error-color);
 }
 .input {

@@ -25,7 +25,6 @@ function App() {
                 <Input type="password" placeholder="Your Password" label="Password" name="password" isRequired="true"/>
                 <LinkTag content="Forgot Password?" link="/forgot-password" />
                 <Button type="submit" content="Login" />
-                <Logo />
               </Form>
             }
           />
