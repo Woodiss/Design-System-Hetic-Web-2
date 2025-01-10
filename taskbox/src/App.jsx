@@ -19,7 +19,7 @@ function App() {
           <Route
             path="/"
             element={
-              <Form title="Login Form" subtitle="Please enter your credentials">
+              <Form title="Welcome back!" subtitle="Please enter your details">
                 <Input type="email" placeholder="Enter your email" label="Email" name="email" isRequired="true"/>
                 <Input type="password" placeholder="Enter your password" label="Password" name="password" isRequired="true"/>
                 <LinkTag content="Forgot password?" link="/forgot-password" />

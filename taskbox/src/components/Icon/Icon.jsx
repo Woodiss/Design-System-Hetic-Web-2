@@ -34,7 +34,7 @@ const useIconImport = (name) => {
 };
 
 
-export const Icon = ({ name, size, ariaLabel, title, role, className, ...props }) => {
+export const Icon = ({ name, color, size, ariaLabel, title, role, className, ...props }) => {
   const { error, Svg } = useIconImport(name);
 
   if (error) {
@@ -46,7 +46,7 @@ export const Icon = ({ name, size, ariaLabel, title, role, className, ...props }
     return null;
   }
 
-  return <Svg width={size} height={size} aria-label={ariaLabel} className={className} {...props} />;
+  return <Svg width={size} color={color} height={size} aria-label={ariaLabel} className={className} {...props} />;
 };
 
 Icon.propTypes = {
@@ -70,6 +70,10 @@ Icon.propTypes = {
    * Define the role attribute for the svg element
    */
   role: PropTypes.string,
+  /**
+   * Define the className attribute for the svg element
+   */
+  color: PropTypes.string,
   /**
    * Define the className attribute for the svg element
    */
