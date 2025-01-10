@@ -27,6 +27,6 @@ jobs:
       - name: Publish to Chromatic
         run: |
           cd taskbox
-          npx chromatic --project-token=$CHROMATIC_PROJECT_TOKEN
+          npx chromatic --project-token=$CHROMATIC_PROJECT_TOKEN --auto-accept-changes
         env:
           CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
