@@ -1,16 +1,13 @@
 @import '../../style/global.css';
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: var(--primary-color);
 
   &:hover {
     color: var(--primary-color-hover);
+    /* text-decoration: underline; */
   }
-
-  &:active {
-    text-decoration: underline;
-  }
-
+  
   &:focus {
     color: var(--push-color);
     outline: var(--regular-outline);
