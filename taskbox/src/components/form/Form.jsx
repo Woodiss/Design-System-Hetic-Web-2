@@ -17,8 +17,17 @@ export const Form = ({ title, subtitle, children, ...props }) => {
   };
   
   Form.propTypes = {
+    /**
+   * Title of the form
+   */
     title: PropTypes.string,
+    /**
+   * Subtitle of the form
+   */
     subtitle: PropTypes.string,
+     /**
+   * Elements that the from contains
+   */
     children: PropTypes.node,
   };
   

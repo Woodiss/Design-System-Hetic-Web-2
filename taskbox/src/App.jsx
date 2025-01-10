@@ -8,6 +8,7 @@ import { LinkTag } from "./components/link/LinkTag";
 import { Button } from "./components/button/Button";
 import { Select } from "./components/select/Select";
 import { BrowserRouter, Route, Routes, NavLink } from "react-router-dom";
+import Logo from "./components/assets/discord.svg?react";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
                 {/* <NavLink>Test</NavLink> */}
                 <LinkTag content="Forgot Password?" link="/forgot-password" />
                 <Button type="submit" content="Login" />
+                <Logo />
               </Form>
             }
           />
@@ -43,7 +45,7 @@ function App() {
                 <Input type="firstname" placeholder="Your First Name" label="First name" name="firstname" />
                 <Input type="lastname" placeholder="Your Last Name" label="Last name" name="lastname" />
                 <Input type="email" placeholder="Your Email" label="Email" name="email" />
-                <Select label="Select a topic" name="topic" options={['General', 'Billing', 'Technical', 'Others']} />
+                <Select label="Select a topic" name="topic" options={["General", "Billing", "Technical", "Others"]} />
                 <Button type="submit" content="Send" />
               </Form>
             }

@@ -14,7 +14,7 @@ export const Select = ({ id, label, options, error, ...props }) => {
 
 {error && (
         <div className="input-message">
-          <Icon src={errorIcon} alt={"Error Icon"} size={20}/>
+          <Icon size={'20px'} name={"errorIcon"} color={"var(--accent-danger)"} ariaLabel={"Error Icon"} title={"Error Icon"} role={"img"}/>
           <Text tag={'p'} content={error} optionalClassName={'input-error'}/>
         </div>
         )}
