@@ -25,9 +25,9 @@ textarea {
 }
 
 textarea:focus {
-    border-bottom: 1px solid transparent;
+    border-bottom: 2px solid transparent;
     outline: var(--primary-outline);
-    outline-width: 1px;
+    outline-width: 2px;
 }
 
 .textarea-error-outline {
