@@ -21,7 +21,6 @@ function App() {
               <Form title="Login Form" subtitle="Please enter your credentials">
                 <Input type="email" placeholder="Your Email" label="Email" name="email" />
                 <Input type="password" placeholder="Your Password" label="Password" name="password" />
-                {/* <NavLink>Test</NavLink> */}
                 <LinkTag content="Forgot Password?" link="/forgot-password" />
                 <Button type="submit" content="Login" />
               </Form>
